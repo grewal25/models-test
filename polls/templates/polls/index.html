@@ -1,0 +1,6 @@
+
+<ul>
+  {% for question in total_question %}
+  <li> <a href="/polls/{{question.id}}">{{question.question}}</a> </li>
+  {% endfor %}
+</ul>

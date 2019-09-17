@@ -1,0 +1,8 @@
+
+<h3>All query set:
+<small> {{all_names}} </small>
+</h3>
+
+{% for name in all_names %}
+<li> <a href="{% url 'likes:likes-detail' name.id %}">{{ name.name }}</a> </li>
+{% endfor %}

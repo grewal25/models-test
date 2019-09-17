@@ -1,0 +1,5 @@
+<ul>
+  {% for choice in group_likes.group_set.all %}
+  <li>{{choice.text}} has {{choice.like}} likes</li>
+{% endfor %}
+</ul>
